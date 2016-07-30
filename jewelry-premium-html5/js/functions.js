@@ -266,7 +266,7 @@ if (jQuery(window).width() <= 767) {
     jQuery('#blog .blogNav select:eq(2)').prepend('<option> --- Select Archives ---</option>');
 
     jQuery('#subcategoriesBlock select').prepend('<option> --- Select Sub-Category ---</option>');
-
+    jQuery('#subcategoriesBlock select option:first').prop('selected',true);
     jQuery('#modManufacturer select:eq(0)').prepend('<option> --- Select A Manufacturer ---</option>');
 
     jQuery('#blog .blogNav select, #subcategoriesBlock select, #modManufacturer select').change(function () {
